@@ -5,7 +5,7 @@ import { HasRating } from '../Service/RatingService';
 import AnimeRating from './AnimeRating';
 import React, { useState } from 'react';
 
-const GET_ONE_ANIME = gql`
+export const GET_ONE_ANIME = gql`
 query($id: Int) {
     Media (id: $id) {
         id
